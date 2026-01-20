@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>react logo</title>
+    <style>
+        body{
+            background: #11254a;
+            height: 100vh; 
+            display: flex;
+
+        }
+        .main{
+            width: 400px;
+            height: 400px;
+            margin:  auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* border: 2px solid white; */
+            top: 20%;
+            left: 20%;
+            animation: rotateAnimation 4s linear  infinite;
+        }
+       
+        @keyframes rotateAnimation {
+            0% {
+                transform: rotate(0deg);
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+        .circle{
+            width: 70px;
+            height: 70px;
+            border-radius: 100%;
+
+            background: rgb(92, 181, 255);
+        }
+        .blue-ring{
+            width: 400px;
+            height: 150px;
+            border: 10px solid rgb(65, 219, 240);
+            border-radius: 50% ;
+            position: absolute;
+            z-index: -1;
+            transform: rotate(56deg);
+            
+        }
+        .green-ring{
+            width: 400px;
+            height: 150px;
+            border: 10px solid rgb(6, 119, 12);
+            border-radius: 50% ;
+            position: absolute;
+            transform: rotate(120deg);
+        }
+        .cream-ring{
+            width: 400px;
+            height: 150px;
+            border: 10px solid rgb(211, 211, 211);
+            border-radius: 50% ;
+            position: absolute;
+            z-index: -2;
+            transform: rotate(180deg);
+        }
+        .heading{
+            width: 100vw;
+            color: aqua;
+            font-size: 3.4rem;
+            text-align: center;
+            position: absolute;
+            /* top: px; */
+            font-family:sans-serif;
+          }
+    </style>
+</head>
+<body>
+    <h2 class="heading">React-Logo</h2>
+    <div class="main">
+        <div class="circle"></div>
+        <div class=" blue-ring"></div>
+        <div class=" cream-ring"></div>
+        <div class=" green-ring"></div>
+    </div>
+   
+</body>
+</html>
